@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+header {
+    .height-width(10vh, 90%);
+    margin: 0 auto;
+
+    .header-container{
+        .height-width(10vh, 70%);
+        margin: 0 auto;
+        .display(space-evenly, none);
+        border-bottom: 2px dashed gray;
+
+        .fun-logo {
+            width: 20%;
+            border: 1px solid green;
+            .display(center, center);
+
+            h1 {
+                font-weight: bolder;
+            }
+        }
+
+        .navbar {
+            width: 40%;
+            border: 1px solid red;
+            .display(none, center);
+
+            ul {
+                width: 100%;
+                .display(space-evenly);
+                
+                li a{
+                    text-decoration: none;
+                    font-size: 2rem;
+                    color: black;
+                }// Nav Links Closes
+            }//Navbar List closes
+        }//Navbar Closes
+    }// Header Container Closes
+}// Header Closes
