@@ -8,11 +8,10 @@ header {
         .height-width(10vh, 70%);
         margin: 0 auto;
         .display(space-evenly, none);
-        border-bottom: 2px dashed gray;
+        border-bottom: 2px dashed @navigation-border;
 
         .fun-logo {
             width: 20%;
-            border: 1px solid green;
             .display(center, center);
 
             h1 {
@@ -22,12 +21,11 @@ header {
 
         .navbar {
             width: 40%;
-            border: 1px solid red;
             .display(none, center);
 
             ul {
                 width: 100%;
-                .display(space-evenly);
+                .display(space-evenly, none);
                 
                 li a{
                     text-decoration: none;
