@@ -3,18 +3,40 @@
 
 
     .img-container{
-      width: 50%;
+      width: 44%;
       .display(center, none);
       margin: 0 auto;
       margin-bottom: 4vh;
+
+      @media @phone{
+        width: 55%;
+        margin-bottom: 1vh;
+    }
     }// Img Container Closes
 
     .intro-description{
-      width: 50%;
+      width: 43%;
       margin: 0 auto;
       margin-bottom: 2vh;
       border-bottom: 2px dashed @navigation-border;
+
+
+      @media @phone{
+        width: 60%
     }
+
+      h1{
+        @media @phone{
+          font-size: 3rem;
+      }
+      }
+
+    p{
+      @media @phone{
+        font-size: 1.4rem;
+    }
+  }
+}
 
 .home {
 
@@ -28,13 +50,13 @@
    
     
     .text-content {
-      width: 48%;
-      padding-right: 1%;
+      width: 45%;
+      padding-right: 5%;
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+      width: 45%;
+      padding-left: 5%;
 
       img {
         border-radius: 10px;
@@ -47,12 +69,12 @@
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
-      padding-left: 1%;
+      padding-left: 5%;
       padding-right: 0;
     }
 
     .img-content {
-      padding-right: 1%;
+      padding-right: 5%;
       padding-left: 0;
     }
   }
