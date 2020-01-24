@@ -46,17 +46,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
    
     
     .text-content {
       width: 45%;
       padding-right: 5%;
+
+      @media @phone{
+        width: 60%;
     }
+
+    h1{
+      @media @phone{
+        font-size: 3rem;
+    }
+    }
+
+    p{
+      @media @phone{
+        font-size: 1.4rem;
+    }
+  }
+}
 
     .img-content {
       width: 45%;
       padding-left: 5%;
+
+      @media @phone{
+        width: 60%;
+        padding: 2vh 5% 0 0;
+    }
 
       img {
         border-radius: 10px;
@@ -68,14 +93,33 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone{
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+  }
+
+
     .text-content {
       padding-left: 5%;
       padding-right: 0;
+
+      @media @phone{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 5%;
+    }
     }
 
     .img-content {
       padding-right: 5%;
       padding-left: 0;
+
+      @media @phone{
+        width: 100%;
+    }
     }
   }
 
@@ -83,9 +127,26 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone{
+      margin-top: 4vh;
+      width: 60%;
+  }
+
     img {
       border-radius: 10px;
     }
+
+    h1{
+      @media @phone{
+        font-size: 3rem;
+    }
+    }
+
+    p{
+      @media @phone{
+        font-size: 1.4rem;
+    }
+  }
   }
 
   .content-pick {
@@ -93,9 +154,33 @@
     border-top: 2px dashed @navigation-border;
     .display(space-between, none);
 
+    @media @phone{
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+    h1{
+      @media @phone{
+        font-size: 3rem;
+    }
+    }
+
+    p{
+      @media @phone{
+        font-size: 1.4rem;
+    }
+  }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone{
+        width: 100%;
+    }
 
       .btn {
        
